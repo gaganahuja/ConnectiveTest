@@ -1,0 +1,6 @@
+PROBLEM 1
+SELECT MAX (Salary) as SecondHighestSalary FROM Employee WHERE Salary NOT IN (SELECT Max (Salary) FROM Employee);
+
+PROBLEM 2
+- NOT SURE FOR consecutive occurance, but all occurence can be found with-
+SELECT Num FROM Logs GROUP BY Num HAVING COUNT (Num) >3
